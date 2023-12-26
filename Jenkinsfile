@@ -9,6 +9,7 @@ pipeline{
 
    stage('build image'){
      steps{
+      sh 'whoami'
       sh '/usr/bin/docker image build -t prasadthombare/hackathon2 .'
      }
    } 
